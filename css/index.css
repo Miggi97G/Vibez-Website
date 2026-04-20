@@ -22,7 +22,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
     position: relative;
@@ -34,7 +35,10 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, .logo {
+h1,
+h2,
+h3,
+.logo {
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -61,8 +65,13 @@ h1, h2, h3, .logo {
 }
 
 @keyframes drift {
-    0% { transform: translateY(-100px) rotate(0deg) translateX(0); }
-    100% { transform: translateY(110vh) rotate(360deg) translateX(100px); }
+    0% {
+        transform: translateY(-100px) rotate(0deg) translateX(0);
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg) translateX(100px);
+    }
 }
 
 /* --- Layout --- */
@@ -168,7 +177,7 @@ nav {
     z-index: 100;
     cursor: pointer;
     transition: var(--transition);
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
 }
 
 .slideshow-arrow img {
@@ -298,6 +307,25 @@ h1 {
     border-color: var(--bright-green);
 }
 
+.map-route-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .map-route-btn {
+        bottom: 15px;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
 .map-container iframe {
     width: 100%;
     height: 100%;
@@ -383,7 +411,7 @@ h1 {
     max-height: 85vh;
     overflow-y: auto;
     position: relative;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     border: 3px solid var(--bright-green);
     transform: scale(0.8);
     transition: var(--transition);
@@ -531,9 +559,64 @@ h1 {
 }
 
 @keyframes smoke-up {
-    0% { transform: scale(0.5) translateY(0); opacity: 0; }
-    20% { opacity: 0.2; }
-    100% { transform: scale(2) translateY(-200px); opacity: 0; }
+    0% {
+        transform: scale(0.5) translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(2) translateY(-200px);
+        opacity: 0;
+    }
+}
+
+/* --- Reviews --- */
+.reviews-section {
+    margin: 8rem 0;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.review-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 40px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid var(--soft-green);
+    text-align: center;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--bright-green);
+}
+
+.review-card .stars {
+    color: #ffb703;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review-card p {
+    font-style: italic;
+    color: var(--leaf-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.review-card .reviewer {
+    display: block;
+    font-weight: 700;
+    color: var(--primary-green);
 }
 
 /* --- Footer --- */
@@ -569,55 +652,74 @@ footer a:hover {
         width: 100%;
         height: 450px;
     }
-    
+
     h1 {
         font-size: 3.5rem;
     }
 }
 
 @media (max-width: 768px) {
-    h1 { 
-        font-size: 2.8rem;
+    :root {
+        --shadow: 0 5px 15px rgba(27, 67, 50, 0.1);
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
         text-align: center;
         width: 100%;
+        line-height: 1.2;
     }
-    
-    .subtitle { 
-        font-size: 1.1rem;
+
+    .subtitle {
+        font-size: 1rem;
         text-align: center;
         margin: 0 auto 2rem;
         width: 100%;
+        padding: 0 0.5rem;
     }
-    
-    nav { 
-        width: 95%; 
-        padding: 0.8rem 1.5rem;
+
+    nav {
+        width: 92%;
+        padding: 1rem;
         flex-direction: column;
-        gap: 1rem;
-        border-radius: 20px;
+        gap: 0.8rem;
+        border-radius: 25px;
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
         align-items: center;
+        justify-content: center;
     }
-    
+
     .nav-links {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
         justify-content: center;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
-    
+
     .nav-links a {
         margin: 0;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
-    
+
+    .logo {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
     #hero-section {
-        padding-top: 12rem;
+        padding-top: 14rem;
         text-align: center;
+        min-height: auto;
     }
-    
+
     .hero-content {
         align-items: center;
         width: 100%;
@@ -629,90 +731,99 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hero-image-container {
         width: 100%;
-        height: 350px;
-        border-radius: 30px;
+        height: 300px;
+        border-radius: 25px;
         margin: 0 auto;
     }
-    
+
     .slideshow-arrow {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
-    
+
     .playful-card {
-        padding: 2rem;
+        padding: 1.5rem;
+        border-radius: 30px;
     }
-    
+
     .hours-section {
-        padding: 2rem;
-        border-radius: 40px;
+        padding: 1.5rem;
+        border-radius: 30px;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hours-list {
         width: 100%;
+        margin-top: 1rem;
     }
 
     .hours-list li {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
     }
-    
+
     .map-container {
         width: 100%;
-        height: 300px;
+        height: 250px;
+        border-radius: 25px;
     }
-    
+
     .modal-content {
-        padding: 2rem;
-        border-radius: 30px;
-        width: 95%;
+        padding: 1.5rem;
+        border-radius: 25px;
+        width: 92%;
     }
-    
+
     .modal-content h2 {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
         text-align: center;
     }
-    
+
     footer {
-        padding: 4rem 1.5rem;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+        padding: 4rem 1rem;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
         text-align: center;
+    }
+
+    footer .logo {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
-    h1 { 
-        font-size: 2.2rem;
+    h1 {
+        font-size: 2rem;
     }
-    
+
     .hero-image-container {
-        height: 250px;
+        height: 220px;
     }
-    
+
     .cta-button {
-        padding: 1rem 1.5rem;
+        padding: 1rem;
         font-size: 0.9rem;
-        width: 100%;
-        max-width: 250px;
-        text-align: center;
+        max-width: none;
     }
-    
+
     .hero-text div {
         flex-direction: column;
         width: 100%;
-        align-items: center;
+        align-items: stretch;
+        gap: 0.8rem !important;
     }
 
     .menu-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
-    
+
     .menu-board {
-        padding: 1.5rem;
+        padding: 1rem;
+        border-radius: 25px;
     }
 }

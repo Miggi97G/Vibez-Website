@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibez SG | Playful CBD & Joint Bar</title>
-    <meta name="description" content="Vibez SG - Deine chillige CBD & Joint Bar in St. Gallen. Entdecke grüne Vibes, exklusive Blends und eine verspielte Atmosphäre.">
+    <meta name="description"
+        content="Vibez SG - Deine chillige CBD & Joint Bar in St. Gallen. Entdecke grüne Vibes, exklusive Blends und eine verspielte Atmosphäre.">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <!-- Background Animation -->
     <div class="bg-animation" id="leaf-container"></div>
-    
+
     <!-- Navbar -->
     <nav>
         <div class="logo" id="site-logo">Vibez.SG</div>
@@ -30,20 +33,22 @@
                         <img src="assets/hero.png" alt="Playful CBD Bar Illustration" class="active">
                         <img src="assets/slide1.png" alt="Slideshow Image 1">
                         <img src="assets/slide2.png" alt="Slideshow Image 2">
-                        
+
                         <div class="slideshow-arrow left-arrow" id="prev-slide">
                             <img src="assets/arrow-left.png" alt="Previous">
                         </div>
                         <div class="slideshow-arrow right-arrow" id="next-slide">
                             <img src="assets/arrow-right.png" alt="Next">
                         </div>
-                        
+
                         <div class="smoke-container" id="smoke-rings"></div>
                     </div>
-                    
+
                     <div class="hero-text">
-                        <h1>High <span class="highlight">Vibez</span>, Best <span class="highlight">Joints</span></h1>
-                        <p class="subtitle">Willkommen in deiner grünen Oase in St. Gallen. Entspanne dich in unserer verspielten CBD & Joint Bar. Nur die besten Vibes für dich!</p>
+                        <h1>High <span class="highlight">Vibez</span>, <span class="highlight">The first CBD Place in
+                                Town</span></h1>
+                        <p class="subtitle">Willkommen in deiner grünen Oase in St. Gallen. Entspanne dich in unserer
+                            verspielten CBD & Joint Bar. Nur die besten Vibes für dich!</p>
                         <div style="display: flex; gap: 1rem; justify-content: center;">
                             <a href="#about" class="cta-button">Entdecken</a>
                             <a href="offers.html" class="cta-button" style="background: var(--primary-green);">Menü</a>
@@ -88,15 +93,48 @@
                             <li><span>Sonntag</span> <span>14:00 – 22:00 Uhr</span></li>
                         </ul>
                     </div>
-                    
+
                     <div class="map-container">
-                        <iframe 
-                            src="https://maps.google.com/maps?q=Brühlgasse%2035%2C%209000%20St.%20Gallen&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.6309016952905!2d9.375638918918798!3d47.42580030707502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1fa23ad0decd%3A0x7d3b1c0da2daef35!2sVibez%20SG!5e0!3m2!1sde-CH!2sch!4v1759491936280!5m2!1sde-CH!2sch"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                        <a href="https://www.google.com/maps/dir//Br%C3%BChlgasse+35,+9000+St.+Gallen" target="_blank" class="cta-button" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 0.8rem 1.5rem; font-size: 0.9rem; white-space: nowrap;">Route planen</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Br%C3%BChlgasse+35,+9000+St.+Gallen"
+                            target="_blank" class="cta-button map-route-btn">Route planen</a>
+                    </div>
+                </div>
+
+                <!-- Reviews Section -->
+                <div class="reviews-section">
+                    <h2 style="font-size: 3rem; color: var(--primary-green); text-align: center; margin-bottom: 3rem;">
+                        Das sagen unsere Gäste</h2>
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"Super entspannte Atmosphäre und tolles Personal. Bester Ort in St. Gallen!"</p>
+                            <span class="reviewer">- Google Rezension</span>
+                        </div>
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"Coole Drinks und das CBD Angebot ist top. Komme immer wieder gerne."</p>
+                            <span class="reviewer">- Google Rezension</span>
+                        </div>
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"Einzigartiges Konzept und sehr freundlich. Ein Muss für jeden CBD Fan."</p>
+                            <span class="reviewer">- Google Rezension</span>
+                        </div>
+                        <div class="review-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"Immer gute Musik und das Personal ist super drauf. Die Cocktails sind auch klasse!"</p>
+                            <span class="reviewer">- Google Rezension</span>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Vibez+SG+St.+Gallen+Rezensionen"
+                            target="_blank" class="cta-button"
+                            style="background: transparent; color: var(--primary-green); border: 2px solid var(--primary-green);">Alle
+                            Bewertungen lesen</a>
                     </div>
                 </div>
             </div>
@@ -110,10 +148,12 @@
                     <p style="margin-bottom: 2rem; opacity: 0.8;">Brühlgasse 35, 9000 St. Gallen</p>
                     <div style="display: flex; justify-content: center; gap: 2rem;">
                         <a href="https://www.instagram.com/vibez.sg/">Instagram</a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Vibez+SG+Brühlgasse+35+9000+St.+Gallen" target="_blank">Maps</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Vibez+SG+Brühlgasse+35+9000+St.+Gallen"
+                            target="_blank">Maps</a>
                         <a href="#">Kontakt</a>
                     </div>
-                    <p style="margin-top: 4rem; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Vibez SG. Stay Green. Stay Happy.</p>
+                    <p style="margin-top: 4rem; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Vibez SG. Stay Green. Stay
+                        Happy.</p>
                 </div>
             </div>
         </footer>
@@ -125,13 +165,17 @@
             <span class="close-modal">&times;</span>
             <div class="modal-body">
                 <h2 style="font-size: 2.5rem; color: var(--primary-green); margin-bottom: 1.5rem;">CBD</h2>
-                <p>Als erste Bar in der Stadt St. Gallen bieten wir die Möglichkeit neben Drinks und Barfood auch hochwertiges CBD zu kaufen. Unser CBD wird in der Schweiz produziert und über einen lokalen Händler bezogen.</p>
-                
+                <p>Als erste Bar in der Stadt St. Gallen bieten wir die Möglichkeit neben Drinks und Barfood auch
+                    hochwertiges CBD zu kaufen. Unser CBD wird in der Schweiz produziert und über einen lokalen Händler
+                    bezogen.</p>
+
                 <h3 style="margin-top: 2rem; color: var(--bright-green);">Was ist CBD?</h3>
-                <p>CBD steht für den Wirkstoff Cannabidiol. Und wie der Name schon vermuten lässt, enthält CBD-Gras eine ganze Menge von diesem Wirkstoff. Damit grenzt es sich vom bekannten THC-haltigen Cannabis ab, welches für die Rauschwirkung und das High-Gefühl verantwortlich ist.</p>
-                
+                <p>CBD steht für den Wirkstoff Cannabidiol. Und wie der Name schon vermuten lässt, enthält CBD-Gras eine
+                    ganze Menge von diesem Wirkstoff. Damit grenzt es sich vom bekannten THC-haltigen Cannabis ab,
+                    welches für die Rauschwirkung und das High-Gefühl verantwortlich ist.</p>
+
                 <h3 style="margin-top: 2rem; color: var(--bright-green); margin-bottom: 1rem;">Unsere Sorten:</h3>
-                
+
                 <div class="modal-selection">
                     <div class="brand-group">
                         <h4>Ottmann</h4>
@@ -141,7 +185,7 @@
                             <li>Früchtchen 2g <span>CHF 20.00</span></li>
                         </ul>
                     </div>
-                    
+
                     <div class="brand-group" style="margin-top: 1.5rem;">
                         <h4>Sweed</h4>
                         <ul>
@@ -159,7 +203,7 @@
             <span class="close-modal" id="close-drinks">&times;</span>
             <div class="modal-body">
                 <h2 style="font-size: 2.5rem; color: var(--primary-green); margin-bottom: 1.5rem;">Getränkekarte</h2>
-                
+
                 <div class="modal-selection">
                     <div class="brand-group">
                         <h4>Kaffee & Tee</h4>
@@ -218,4 +262,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
