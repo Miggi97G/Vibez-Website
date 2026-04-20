@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibez SG | Playful CBD & Joint Bar</title>
+    <meta name="description" content="Vibez SG - Deine chillige CBD & Joint Bar in St. Gallen. Entdecke grüne Vibes, exklusive Blends und eine verspielte Atmosphäre.">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation" id="leaf-container"></div>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="logo" id="site-logo">Vibez.SG</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="offers.html">Angebote</a>
+            <a href="https://www.instagram.com/vibez.sg/" target="_blank">Instagram</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image-container" id="hero-slideshow">
+                        <img src="assets/hero.png" alt="Playful CBD Bar Illustration" class="active">
+                        <img src="assets/slide1.png" alt="Slideshow Image 1">
+                        <img src="assets/slide2.png" alt="Slideshow Image 2">
+                        
+                        <div class="slideshow-arrow left-arrow" id="prev-slide">
+                            <img src="assets/arrow-left.png" alt="Previous">
+                        </div>
+                        <div class="slideshow-arrow right-arrow" id="next-slide">
+                            <img src="assets/arrow-right.png" alt="Next">
+                        </div>
+                        
+                        <div class="smoke-container" id="smoke-rings"></div>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1>High <span class="highlight">Vibez</span>, Best <span class="highlight">Joints</span></h1>
+                        <p class="subtitle">Willkommen in deiner grünen Oase in St. Gallen. Entspanne dich in unserer verspielten CBD & Joint Bar. Nur die besten Vibes für dich!</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center;">
+                            <a href="#about" class="cta-button">Entdecken</a>
+                            <a href="offers.html" class="cta-button" style="background: var(--primary-green);">Menü</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="card-grid">
+                    <div class="playful-card" id="cbd-card" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🍃</div>
+                        <h2>Premium CBD</h2>
+                        <p>Nur handverlesene Blüten und exklusive Blends. Qualität, die man schmeckt und fühlt.</p>
+                    </div>
+                    <div class="playful-card" id="drinks-card" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🍹</div>
+                        <h2>Chill Drinks</h2>
+                        <p>Erfrischende Kreationen und entspannte Drinks, perfekt abgestimmt auf dein Erlebnis.</p>
+                    </div>
+                    <div class="playful-card">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+                        <h2>Pure Vibes</h2>
+                        <p>Ein Ort zum Lachen, Chillen und Genießen. Dein Wohnzimmer mitten in St. Gallen.</p>
+                    </div>
+                </div>
+
+                <!-- Opening Hours & Map Section -->
+                <div class="hours-section">
+                    <div class="hours-content">
+                        <h2 style="font-size: 3rem; color: var(--primary-green);">Öffnungszeiten</h2>
+                        <ul class="hours-list">
+                            <li><span>Montag</span> <span>14:00 – 24:00 Uhr</span></li>
+                            <li><span>Dienstag</span> <span>14:00 – 24:00 Uhr</span></li>
+                            <li><span>Mittwoch</span> <span>14:00 – 24:00 Uhr</span></li>
+                            <li><span>Donnerstag</span> <span>14:00 – 24:00 Uhr</span></li>
+                            <li><span>Freitag</span> <span>14:00 – 01:00 Uhr</span></li>
+                            <li><span>Samstag</span> <span>14:00 – 01:00 Uhr</span></li>
+                            <li><span>Sonntag</span> <span>14:00 – 22:00 Uhr</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Brühlgasse%2035%2C%209000%20St.%20Gallen&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <a href="https://www.google.com/maps/dir//Br%C3%BChlgasse+35,+9000+St.+Gallen" target="_blank" class="cta-button" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 0.8rem 1.5rem; font-size: 0.9rem; white-space: nowrap;">Route planen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div style="text-align: center;">
+                    <div class="logo">Vibez Bar</div>
+                    <p style="margin-bottom: 2rem; opacity: 0.8;">Brühlgasse 35, 9000 St. Gallen</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem;">
+                        <a href="https://www.instagram.com/vibez.sg/">Instagram</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Vibez+SG+Brühlgasse+35+9000+St.+Gallen" target="_blank">Maps</a>
+                        <a href="#">Kontakt</a>
+                    </div>
+                    <p style="margin-top: 4rem; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Vibez SG. Stay Green. Stay Happy.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- CBD Modal -->
+    <div id="cbd-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 style="font-size: 2.5rem; color: var(--primary-green); margin-bottom: 1.5rem;">CBD</h2>
+                <p>Als erste Bar in der Stadt St. Gallen bieten wir die Möglichkeit neben Drinks und Barfood auch hochwertiges CBD zu kaufen. Unser CBD wird in der Schweiz produziert und über einen lokalen Händler bezogen.</p>
+                
+                <h3 style="margin-top: 2rem; color: var(--bright-green);">Was ist CBD?</h3>
+                <p>CBD steht für den Wirkstoff Cannabidiol. Und wie der Name schon vermuten lässt, enthält CBD-Gras eine ganze Menge von diesem Wirkstoff. Damit grenzt es sich vom bekannten THC-haltigen Cannabis ab, welches für die Rauschwirkung und das High-Gefühl verantwortlich ist.</p>
+                
+                <h3 style="margin-top: 2rem; color: var(--bright-green); margin-bottom: 1rem;">Unsere Sorten:</h3>
+                
+                <div class="modal-selection">
+                    <div class="brand-group">
+                        <h4>Ottmann</h4>
+                        <ul>
+                            <li>Orange Gelato 2g <span>CHF 20.00</span></li>
+                            <li>Habize 2g <span>CHF 20.00</span></li>
+                            <li>Früchtchen 2g <span>CHF 20.00</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="brand-group" style="margin-top: 1.5rem;">
+                        <h4>Sweed</h4>
+                        <ul>
+                            <li>Super Silver Haze 2g <span>CHF 10.00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks Modal -->
+    <div id="drinks-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" id="close-drinks">&times;</span>
+            <div class="modal-body">
+                <h2 style="font-size: 2.5rem; color: var(--primary-green); margin-bottom: 1.5rem;">Getränkekarte</h2>
+                
+                <div class="modal-selection">
+                    <div class="brand-group">
+                        <h4>Kaffee & Tee</h4>
+                        <ul>
+                            <li>Cannabistee <span>6.00</span></li>
+                            <li>Cappuccino <span>5.50</span></li>
+                            <li>Espresso <span>4.00</span></li>
+                            <li>Heisse Schokolade / Ovo <span>5.50</span></li>
+                            <li>Kaffee <span>4.00</span></li>
+                            <li>Latte Macchiato <span>5.50</span></li>
+                            <li>Milchkaffee <span>4.50</span></li>
+                            <li>Tee <span>4.50</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-group" style="margin-top: 1.5rem;">
+                        <h4>Softdrinks</h4>
+                        <ul>
+                            <li>Cola / Eistee / Schorle 3.0 dl <span>4.50</span></li>
+                            <li>Cola Zero / Sinalco / Rivella 3.3 dl <span>5.00</span></li>
+                            <li>Elmer Mineral mit 5.0 dl <span>6.00</span></li>
+                            <li>Elmer Mineral ohne 3.3 dl <span>4.50</span></li>
+                            <li>Fruchtsäfte 3.0 dl <span>5.00</span></li>
+                            <li>Fruchtsäfte 5.0 dl <span>7.00</span></li>
+                            <li>Red Bull 2.5 dl <span>7.00</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-group" style="margin-top: 1.5rem;">
+                        <h4>Bier</h4>
+                        <ul>
+                            <li>Corona 0.33 l <span>7.00</span></li>
+                            <li>Edelspez 0.3 l / 0.5 l <span>5.00 / 7.50</span></li>
+                            <li>Gallus 612 0.33 l <span>7.00</span></li>
+                            <li>Indian Pale Ale 0.33 l <span>7.00</span></li>
+                            <li>Klosterbräu 0.3 l / 0.5 l <span>5.50 / 8.00</span></li>
+                            <li>Weisser Engel 0.5 l <span>8.50</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-group" style="margin-top: 1.5rem;">
+                        <h4>Weine & Aperitifs</h4>
+                        <ul>
+                            <li>Apérol Spritz / Hugo / Lillet <span>12.00</span></li>
+                            <li>Gespritzter Weisswein <span>8.00</span></li>
+                            <li>Prosecco Martini Brut <span>8.00</span></li>
+                            <li>Rot / Primitivo <span>6.00</span></li>
+                            <li>Saint Andrieu (Rosé) <span>7.00</span></li>
+                            <li>Weiss / Riesling <span>6.00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
