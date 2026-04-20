@@ -667,6 +667,11 @@ footer a:hover {
         padding: 0 1rem;
     }
 
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     h1 {
         font-size: 2.5rem;
         text-align: center;
@@ -754,6 +759,12 @@ footer a:hover {
         border-radius: 30px;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+
+    .hours-content {
+        width: 100%;
+        min-width: 0;
     }
 
     .hours-list {
@@ -770,6 +781,7 @@ footer a:hover {
         width: 100%;
         height: 250px;
         border-radius: 25px;
+        min-width: 0;
     }
 
     .modal-content {
@@ -825,5 +837,9 @@ footer a:hover {
     .menu-board {
         padding: 1rem;
         border-radius: 25px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
     }
 }
