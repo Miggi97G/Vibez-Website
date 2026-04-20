@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Quicksand:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-green: #2d6a4f;
-    --leaf-green: #40916c;
-    --mint-green: #95d5b2;
-    --bright-green: #52b788;
-    --soft-green: #d8f3dc;
+    --primary-green: #52b788; /* Swapped to brighter green for primary actions in dark mode */
+    --leaf-green: #95d5b2;
+    --mint-green: #d8f3dc;
+    --bright-green: #74c69d;
+    --soft-green: rgba(45, 106, 79, 0.2);
     --accent-gold: #ffb703;
-    --bg-color: #f0fdf4;
-    --text-dark: #1b4332;
-    --text-light: #f8f9fa;
-    --card-bg: #ffffff;
-    --shadow: 0 10px 30px rgba(27, 67, 50, 0.1);
+    --bg-color: #081c15; /* Deep dark forest green */
+    --text-dark: #f0fdf4; /* Light text for dark background */
+    --text-light: #ffffff;
+    --card-bg: rgba(27, 67, 50, 0.3);
+    --shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -60,7 +60,8 @@ h3,
     height: 40px;
     background: url('../assets/leaf.png') no-repeat center center;
     background-size: contain;
-    opacity: 0.1;
+    opacity: 0.15;
+    filter: brightness(1.5) sepia(1) hue-rotate(90deg);
     animation: drift 15s linear infinite;
 }
 
@@ -102,11 +103,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(15px);
+    background: rgba(8, 28, 21, 0.8);
+    backdrop-filter: blur(20px);
     border-radius: 50px;
-    border: 2px solid var(--bright-green);
-    box-shadow: var(--shadow);
+    border: 1px solid rgba(82, 183, 136, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     transition: var(--transition);
 }
 
@@ -149,8 +150,8 @@ nav {
     height: 500px;
     border-radius: 50px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(45, 106, 79, 0.2);
-    border: 5px solid white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--bright-green);
 }
 
 .hero-image-container img {
@@ -414,7 +415,7 @@ h1 {
 }
 
 .modal-content {
-    background: white;
+    background: #0d2818;
     padding: 3.5rem;
     border-radius: 50px;
     max-width: 700px;
@@ -422,8 +423,8 @@ h1 {
     max-height: 85vh;
     overflow-y: auto;
     position: relative;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-    border: 3px solid var(--bright-green);
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.8);
+    border: 2px solid var(--bright-green);
     transform: scale(0.8);
     transition: var(--transition);
 }
@@ -488,7 +489,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 15px;
-    background: var(--soft-green);
+    background: rgba(82, 183, 136, 0.2);
     z-index: -1;
     border-radius: 10px;
 }
@@ -562,7 +563,7 @@ h1 {
 
 .smoke-ring {
     position: absolute;
-    border: 2px solid var(--leaf-green);
+    border: 2px solid var(--bright-green);
     border-radius: 50%;
     opacity: 0;
     animation: smoke-up 4s ease-out infinite;
@@ -596,13 +597,14 @@ h1 {
 }
 
 .review-card {
-    background: white;
+    background: var(--card-bg);
     padding: 2.5rem;
     border-radius: 40px;
     box-shadow: var(--shadow);
     transition: var(--transition);
     border: 2px solid var(--soft-green);
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .review-card:hover {
