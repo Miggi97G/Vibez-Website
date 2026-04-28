@@ -54,55 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(createSmokeRing, 2000);
 
-    // --- Hero Slideshow Logic ---
-    const slideshowContainer = document.getElementById('hero-slideshow');
-    const prevBtn = document.getElementById('prev-slide');
-    const nextBtn = document.getElementById('next-slide');
 
-    if (slideshowContainer) {
-        const slides = slideshowContainer.querySelectorAll('img:not(.slideshow-arrow img)');
-        let currentSlide = 0;
-        let slideInterval;
-
-        function showSlide(index) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (index + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-
-        function startInterval() {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(() => {
-                showSlide(currentSlide + 1);
-            }, 8000); // Slower: 8 seconds
-        }
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                showSlide(currentSlide - 1);
-                startInterval();
-            });
-        }
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                showSlide(currentSlide + 1);
-                startInterval();
-            });
-        }
-
-        startInterval();
-    }
-
-    // --- Parallax Effect for Hero Slideshow ---
-    document.addEventListener('mousemove', (e) => {
-        const slideshow = document.getElementById('hero-slideshow');
-        if (slideshow) {
-            const xAxis = (window.innerWidth / 2 - e.pageX) / 40;
-            const yAxis = (window.innerHeight / 2 - e.pageY) / 40;
-            slideshow.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-        }
-    });
 
     // --- Smooth Scroll for Anchor Links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
