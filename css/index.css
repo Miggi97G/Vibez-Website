@@ -60,8 +60,8 @@ h3,
     height: 40px;
     background: url('../assets/leaf.png') no-repeat center center;
     background-size: contain;
-    opacity: 0.15;
-    filter: brightness(1.5) sepia(1) hue-rotate(90deg);
+    opacity: 0.2;
+    mix-blend-mode: screen;
     animation: drift 15s linear infinite;
 }
 
@@ -69,9 +69,17 @@ h3,
     0% {
         transform: translateY(-100px) rotate(0deg) translateX(0);
     }
-
+    25% {
+        transform: translateY(25vh) rotate(90deg) translateX(30px);
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg) translateX(-30px);
+    }
+    75% {
+        transform: translateY(75vh) rotate(270deg) translateX(30px);
+    }
     100% {
-        transform: translateY(110vh) rotate(360deg) translateX(100px);
+        transform: translateY(110vh) rotate(360deg) translateX(0);
     }
 }
 
@@ -167,6 +175,14 @@ nav {
 
 .hero-image-container img.active {
     opacity: 1;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
+    mix-blend-mode: screen;
 }
 
 .slideshow-arrow {
